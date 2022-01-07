@@ -33,7 +33,8 @@ python -m ipykernel install --user --name tigergraph-ml --display-name TigerGrap
 conda deactivate
 ```
 
-After the environment is created, you should be able to navigate to the home screen of the JupyterLab and click on the "TigerGraph-ML-PyG" kernel icon (You might have to refresh the page as well). This will open up the JupyterLab kernel with all the necessary dependencies installed.
+After the environment is created, you should be able to navigate to the home screen of the JupyterLab and click on the "TigerGraph-ML-PyG" kernel icon (You might have to refresh the page as well). This will open up the JupyterLab kernel with all the necessary dependencies installed. It should look something like this:
+![JupyterLab Kernel](./doc/jupyterlab-kernel.png)
 #### GPU Version
 Once you have JupyterLab open, navigate to the terminal and run the following commands:
 ```sh
@@ -43,9 +44,13 @@ python -m ipykernel install --user --name tigergraph-ml --display-name TigerGrap
 conda deactivate
 ```
 
-After the environment is created, you should be able to navigate to the home screen of the JupyterLab and click on the "TigerGraph-ML-PyG" kernel icon (You might have to refresh the page as well). This will open up the JupyterLab kernel with all the necessary dependencies installed.
+After the environment is created, you should be able to navigate to the home screen of the JupyterLab and click on the "TigerGraph-ML-PyG" kernel icon (You might have to refresh the page as well). This will open up the JupyterLab kernel with all the necessary dependencies installed. It should look like the CPU version shown above.
 
 ## Clone Tutorial Repository
-
+To clone the tutorial repository, navigate to the terminal and run the following commands:
+```sh
+git clone https://github.com/tg-bill/mlworkbench-docs.git
+```
+You will be all set to start using the tutorials in Google Vertex AI notebooks.
 
 
