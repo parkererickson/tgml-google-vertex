@@ -25,9 +25,10 @@ The GPU setup is a little more complicated. Name your notebook, select the regio
 Once you have created your notebook, you should be able to click on the "OPEN JUPYTERLAB" link from the notebook homepage. This will open up the JupyterLab environment, which looks something like this:
 ![JupyterLab](./doc/jupyterlab-home.png)
 #### CPU Version
+If you wish to install PyTorch Geometric, you can copy the below commands exactly. If you wish to use DGL, then you will want to change the `conda env create` command to `conda env create -f https://raw.githubusercontent.com/parkererickson/tgml-google-vertex/main/dgl-environment-cpu.yml`, and change the display name after the environment is created.
 Once you have JupyterLab open, navigate to the terminal and run the following commands:
 ```sh
-conda env create -f https://raw.githubusercontent.com/parkererickson/tgml-google-vertex/main/environment-cpu.yml
+conda env create -f https://raw.githubusercontent.com/parkererickson/tgml-google-vertex/main/pyg-environment-cpu.yml
 conda activate tigergraph-ml
 python -m ipykernel install --user --name tigergraph-ml --display-name TigerGraph-ML-PyG
 conda deactivate
@@ -36,9 +37,10 @@ conda deactivate
 After the environment is created, you should be able to navigate to the home screen of the JupyterLab and click on the "TigerGraph-ML-PyG" kernel icon (You might have to refresh the page as well). This will open up the JupyterLab kernel with all the necessary dependencies installed. It should look something like this:
 ![JupyterLab Kernel](./doc/jupyterlab-kernel.png)
 #### GPU Version
+If you wish to install PyTorch Geometric, you can copy the below commands exactly. If you wish to use DGL, then you will want to change the `conda env create` command to `conda env create -f https://raw.githubusercontent.com/parkererickson/tgml-google-vertex/main/dgl-environment-cpu.yml`, and change the display name after the environment is created.
 Once you have JupyterLab open, navigate to the terminal and run the following commands:
 ```sh
-conda env create -f https://raw.githubusercontent.com/parkererickson/tgml-google-vertex/main/environment-gpu.yml
+conda env create -f https://raw.githubusercontent.com/parkererickson/tgml-google-vertex/main/pyg-environment-gpu.yml
 conda activate tigergraph-ml
 python -m ipykernel install --user --name tigergraph-ml --display-name TigerGraph-ML-PyG
 conda deactivate
